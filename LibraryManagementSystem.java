@@ -143,21 +143,6 @@ public class LibraryManagementSystem {
                 System.out.println("Email: " + user.email+" " + ", Borrowed Books: " + user.borrowedBooks+" ");
             }
         }
-    }
-    
-    public void borrowBook(String email, String isbn) {
-        User user = users.get(email);
-        Book book = books.get(isbn);
-        
-        if (user == null || book == null) {
-            System.out.println("Invalid user or book.");
-            return;
-        }
-        if (book.quantity <= 0) {
-            System.out.println("Book is not available for borrowing.");
-            return;
-        }
-    }
-        
+    }   
         
 }
