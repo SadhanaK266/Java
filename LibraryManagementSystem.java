@@ -143,6 +143,5 @@ public class LibraryManagementSystem {
                 System.out.println("Email: " + user.email+" " + ", Borrowed Books: " + user.borrowedBooks+" ");
             }
         }
-    }   
-        
+    }
 }
