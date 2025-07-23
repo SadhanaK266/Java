@@ -1,8 +1,6 @@
 
-import java.util.List;
-import java.util.Map;
-import java.util.Scanner;
-
+import java.time.LocalDate;
+import java.util.*;
 
 enum Role{
     ADMIN,BORROWER
@@ -41,10 +39,15 @@ public class LibraryManagementSystem {
     Map<String, LocalDate> dueDates=new HashMap<>();
 
     public static void main(String[] args) {
-        login();
+        LibraryManagementSystem library = new LibraryManagementSystem();
+        library.sampleDataSet();
+        library.login();
     }
-
-    public static void login(){
+    public void sampleDataSet() {
+        users.put("admin@example.com", new User("admin@example.com","admin123", Role.ADMIN));
+        users.put("borrower@example.com", new User("borrower@example.com","borrower123", Role.BORROWER));
+    }
+    public void login(){
         System.out.print("Enter the email :");
         String email=sc.nextLine();
         System.out.print("Enter the password :");
