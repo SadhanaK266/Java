@@ -5,7 +5,7 @@ public class User {
     String email;
     String role;
     double deposit=1500.0;
-    List<Book> borrowedBooks = new ArrayList<>();
+    List<String> borrowedBooks = new ArrayList<>();
     Map<String, LocalDate> borrowDates = new HashMap<>();
 
     public User(String password,String email,String role){
