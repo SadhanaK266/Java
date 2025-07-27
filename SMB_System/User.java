@@ -1,12 +1,13 @@
-public class User{
-    String emailId;
-    String password;
-    String role;
+import java.util.*;
+public class User {
+    String email, password, role;
+    double credit = 1000;
+    int loyaltyPoints = 0;
+    List<Purchase> history = new ArrayList<>();
 
-    public User(String emailId,String password,String role){
-        this.emailId=emailId;
-        this.password=password;
-        this.role=role;
+    public User(String email, String password, String role) {
+        this.email = email;
+        this.password = password;
+        this.role = role;
     }
-
 }
