@@ -69,5 +69,6 @@ public class DiamondPattern{
             }
         }
         sc.close();
+        
     }
 }
