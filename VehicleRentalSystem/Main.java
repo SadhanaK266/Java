@@ -68,7 +68,6 @@ public class Main {
             case 5-> viewAll();
             case 6->changeDeposit();
             case 7-> viewReport();
-
             case 8->{ 
                 current=null;
 			    return;
