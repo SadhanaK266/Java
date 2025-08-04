@@ -18,9 +18,9 @@ public class ZohoDiamondPattern{
                     // System.out.print((i%2!=0)?((k%2!=0)?'1':'*'):((k%2==0)?'1':'*'));
                     System.out.print((i+k)%2==0 ?'1':'*' );
                 }
-                for(int r=i;r<=mid-1;r++){
-                    System.out.print(' ');
-                }
+                // for(int r=i;r<=mid-1;r++){
+                //     System.out.print(' ');
+                // }
                 System.out.println();
             }
             //bottom
@@ -34,9 +34,9 @@ public class ZohoDiamondPattern{
                 for(int k=i;k<=mid;k++){
                     System.out.print((i%2!=0)?((k%2!=0)?'1':'*'):((k%2==0)?'*':'1'));
                 }
-                for(int r=1;r<i;r++){
-                    System.out.print(' ');
-                }
+                // for(int r=1;r<i;r++){
+                //     System.out.print(' ');
+                // }
                 System.out.println();
             }
         }
