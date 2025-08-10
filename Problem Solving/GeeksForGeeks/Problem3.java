@@ -11,5 +11,6 @@ public class Problem3 {
         a=b;
         b=temp;
         System.out.println("After swapping : a="+a+", b="+b);
+        
     }
 }
