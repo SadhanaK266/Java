@@ -19,6 +19,5 @@ public class Problem9 {
         //     System.out.print(arr[i]+" ");
         // }
         System.out.print("The sum of numbers at even indexes = "+sum);
-
     }
 }
