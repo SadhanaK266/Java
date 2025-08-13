@@ -12,7 +12,8 @@ public class Array1{
         }
         System.out.print("Enter the k value : ");
         int k=sc.nextInt();
-
+        
+        //-- works but doesn't give the change of order for all the array input
         for(int i=0;i<arr.length;i+=k){
             int left=i;
             int right=Math.min((i+k)-1 , arr.length-1);
