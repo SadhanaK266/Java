@@ -11,5 +11,6 @@ public class ExcelCol {
             res=res*26 +(ch-'A'+1);
         }
         System.out.println(res);
+        sc.close();
     }
 }
