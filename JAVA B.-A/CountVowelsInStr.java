@@ -11,5 +11,6 @@ public class CountVowelsInStr {
             }
         }
         System.out.print(count);
+        sc.close();
     }
 }
