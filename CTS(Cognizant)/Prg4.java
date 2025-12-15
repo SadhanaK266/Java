@@ -17,7 +17,7 @@ public class Prg4 {
                 original/=10;
             }
             if(sum==i){
-                System.out.println(i);
+                System.out.println(i);//Armstrong number
             }
         }
     }
