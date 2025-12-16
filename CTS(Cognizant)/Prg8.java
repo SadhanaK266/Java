@@ -9,15 +9,23 @@ public class Prg8 {
             arr[i]=sc.nextInt();
         }
         int count=0;
-        int res[]=new int[count];
+        int res[]=new int[n];
         for(int i=0;i<n;i++){
-            for(int j=1;j<n;j++){
-                if(arr[i]==arr[j]){
-                    continue;
+            boolean isDuplicate=false;
+            for(int j=0;j<count;j++){
+                if(arr[i]==res[j]){
+                    isDuplicate=true;
+                    break;
                 }
+            }
+            if(!isDuplicate){
+                res[count]=arr[i];
                 count++;
             }
         }
-        System.out.println(count);
+        System.out.println("After removing the duplicates : ");
+        for(int i=0;i<count;i++){
+            System.out.print(res[i]+" ");
+        }
     }
 }
