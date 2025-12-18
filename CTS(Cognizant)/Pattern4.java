@@ -8,6 +8,7 @@ public class Pattern4 {
         if(n%2==0){
             System.out.print("Kindly enter only the odd numbers");
         }
+        
         else{
             //upper half
             for(int i=0;i<=n/2;i++){
@@ -29,7 +30,6 @@ public class Pattern4 {
                 }
                 System.out.println();
             }
-            
         }
     }    
 }
