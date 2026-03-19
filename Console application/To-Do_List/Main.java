@@ -6,7 +6,8 @@ public class Main {
         ArrayList<String> tasks=new ArrayList<>();
 
         int choice;
-        while (true){ 
+        boolean valid=true;
+        while (valid){ 
             System.out.println("\n------- To-Do List Menu ------");
             System.out.println("1.Add Task\n2.View Tasks\n3.Remove Tasks\n4.Exit");
             System.out.println("Enter your choice : ");
@@ -45,7 +46,9 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("Exited...");
-                    System.exit(0);
+                    valid=false;
+                    // System.exit(0);
+                    break;
                 default:
                     System.out.println("Kindly enter the valid number");
             }
